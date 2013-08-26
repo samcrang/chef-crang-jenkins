@@ -1,0 +1,15 @@
+---
+driver_plugin: vagrant
+driver_config:
+  require_chef_omnibus: true
+
+platforms:
+- name: debian-wheezy-x64
+  driver_config:
+    box: debian-wheezy-x64-nocm
+    box_url: http://puppet-vagrant-boxes.puppetlabs.com/debian-70rc1-x64-vbox4210-nocm.box 
+
+suites:
+- name: default
+  run_list: ["recipe[apt]","recipe[crang-jenkins]"]
+  attributes: {}
