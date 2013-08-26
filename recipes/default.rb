@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-%w{ gcc make zlib1g zlib1g-dev libssl-dev }.each do |p|
+%w{ gcc make zlib1g zlib1g-dev libssl-dev libxml2-dev libxslt1-dev }.each do |p|
   package p
 end
 
