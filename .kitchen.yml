@@ -6,8 +6,8 @@ driver_config:
 platforms:
 - name: debian-wheezy-x86
   driver_config:
-    box: debian-wheezy-x86
-    box_url: https://dl.dropboxusercontent.com/u/17624716/debian-wheezy-x86.box
+    box: debian-wheezy-x86-nocm
+    box_url: https://dl.dropboxusercontent.com/u/17624716/vagrant/debian-wheezy-x86-nocm.box
 
 suites:
 - name: default
